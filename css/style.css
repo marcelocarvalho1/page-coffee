@@ -1,0 +1,233 @@
+/* Reseta estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define a fonte global */
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #252525;
+}
+
+/* Container para centralização */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Estilo do header */
+.header {
+  background-color: #252525;
+  padding: 8px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-menu a {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+  transition: color 200ms linear;
+}
+.header-menu a:hover {
+  color: #fcfcfc79;
+  transition: color 200ms linear;
+}
+
+/* Seção de introdução */
+.intro {
+  background-image: url(../assets/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.intro-title {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.intro-title {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.intro-text {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 180px;
+  height: 40px;
+  border: 2px solid #252525;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: all 200ms linear;
+}
+
+.btn:hover {
+  background-color: #f3f3f3;
+}
+
+.btn-white {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-white:hover {
+  background-color: #f3f3f3;
+  color: #252525;
+}
+
+/* Seção de serviços */
+
+section {
+  padding: 70px 0;
+}
+.services {
+  text-align: center;
+
+  background-color: #fff;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.services-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-item {
+  text-align: center;
+  max-width: 300px;
+}
+
+.services-item img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+/* Seção de história */
+.history {
+  display: flex;
+  padding: 80px 0;
+}
+
+.history-image {
+  background-image: url("../assets/hero.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 400px;
+}
+
+.history-content {
+  padding: 40px;
+  width: 50%;
+  background-color: #fff;
+}
+
+/* Seção de contato */
+.contact {
+  padding: 80px 0;
+}
+.contact .title,
+.contact p {
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #252525;
+}
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  align-self: flex-start;
+}
+
+/* Estilo do footer */
+.footer {
+  background-color: #252525;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-menu {
+    flex-direction: column;
+  }
+
+  .services-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .history {
+    flex-direction: column;
+  }
+
+  .history-image,
+  .history-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro-title {
+    font-size: 2.5rem;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+  }
+}
